@@ -60,7 +60,9 @@ export const getPostList = graphql`
             summary
             categories
             thumbnail {
-              publicURL
+              childImageSharp {
+                gatsbyImageData(width: 768, height: 400)
+              }
             }
           }
         }
