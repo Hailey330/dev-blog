@@ -1,8 +1,8 @@
-import React, { FunctionComponent } from 'react'
+import React, { FunctionComponent, useMemo } from 'react'
 import styled from '@emotion/styled'
 import GlobalStyle from 'components/Common/GlobalStyle'
 import Footer from 'components/Common/Footer'
-import CategoryList from 'components/Main/CategoryList'
+import CategoryList, { CategoryListProps } from 'components/Main/CategoryList'
 import Introduction from 'components/Main/Introduction'
 import PostList from 'components/Main/PostList'
 import { graphql } from 'gatsby'
@@ -26,11 +26,7 @@ type IndexPageProps = {
   }
 }
 
-const CATEGORY_LIST = {
-  All: 5,
-  Web: 3,
-  Mobile: 2,
-}
+// CATEGORY_LIST 상수 제거
 
 const Container = styled.div`
   display: flex;
@@ -53,13 +49,38 @@ const IndexPage: FunctionComponent<IndexPageProps> = function ({
       ? 'All'
       : parsed.category
 
+  const categoryList = useMemo(
+    () =>
+      edges.reduce(
+        (
+          list: CategoryListProps['categoryList'],
+          {
+            node: {
+              frontmatter: { categories },
+            },
+          }: PostListItemType,
+        ) => {
+          categories.forEach(category => {
+            if (list[category] === undefined) list[category] = 1
+            else list[category]++
+          })
+
+          list['All']++
+
+          return list
+        },
+        { All: 0 },
+      ),
+    [],
+  )
+
   return (
     <Container>
       <GlobalStyle />
       <Introduction profileImage={gatsbyImageData} />
       <CategoryList
         selectedCategory={selectedCategory}
-        categoryList={CATEGORY_LIST}
+        categoryList={categoryList}
       />
       <PostList posts={edges} />
       <Footer />
