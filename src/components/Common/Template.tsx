@@ -45,8 +45,8 @@ const Template: FunctionComponent<TemplateProps> = ({
         <meta property="twitter:title" content={title} />
         <meta property="twitter:description" content={description} />
         <meta property="twitter:image" content={image} />
-        <meta property="twitter:site" content="@사용자이름" />
-        <meta property="twitter:creator" content="@사용자이름" />
+        <meta property="twitter:site" content="@홍차" />
+        <meta property="twitter:creator" content="@홍차" />
       </Helmet>
 
       <GlobalStyle />
