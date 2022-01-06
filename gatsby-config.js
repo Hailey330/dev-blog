@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    title: `홍차와 함께하는 개발`,
+    description: `개발에 대한 모든 기록입니다.`,
+    author: `HaileyChoi`,
+    siteUrl: `https://hongcha-log.com/`,
   },
   plugins: [
     {
@@ -77,6 +77,13 @@ module.exports = {
             },
           },
         ],
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-canonical-urls',
+      options: {
+        siteUrl: 'https://hongcha-log.com/',
+        stripQueryString: true,
       },
     },
   ],
