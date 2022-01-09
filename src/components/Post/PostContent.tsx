@@ -35,7 +35,7 @@ const MarkdownRenderer = styled.div`
   * + h1,
   * + h2,
   * + h3 {
-    margin-top: 80px;
+    margin-top: 30px;
   }
 
   hr + h1,
@@ -83,6 +83,15 @@ const MarkdownRenderer = styled.div`
     text-decoration: underline;
   }
 
+  img {
+    width: 100%;
+  }
+
+  u {
+    text-decoration: underline;
+    text-underline-position: under;
+  }
+
   /* Adjust Code Style */
   pre[class*='language-'] {
     margin: 30px 0;
@@ -98,6 +107,10 @@ const MarkdownRenderer = styled.div`
   code[class*='language-'],
   pre[class*='language-'] {
     tab-size: 2;
+    font-size: 14px;
+    padding: 2px 6px;
+    color: #ffffff;
+    font-family: 'Spoqa Han Sans Neo', 'sans-serif';
   }
 
   /* Markdown Responsive Design */

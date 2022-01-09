@@ -2,6 +2,8 @@ import React, { FunctionComponent } from 'react'
 import styled from '@emotion/styled'
 import { IGatsbyImageData } from 'gatsby-plugin-image'
 import ProfileImage from './ProfileImage'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faMugHot } from '@fortawesome/free-solid-svg-icons'
 
 type IntroductionProps = {
   profileImage: IGatsbyImageData
@@ -9,7 +11,7 @@ type IntroductionProps = {
 
 const Background = styled.div`
   width: 100%;
-  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+  background-image: linear-gradient(60deg, #8b755b 0%, #4c4863 100%);
   color: #ffffff;
 `
 
@@ -57,8 +59,10 @@ const Introduction: FunctionComponent<IntroductionProps> = ({
         <ProfileImage profileImage={profileImage} />
 
         <div>
-          <SubTitle>Nice to Meet You,</SubTitle>
-          <Title>I'm Junior Frontend Developer 🌱</Title>
+          <SubTitle>Hailey Da!ly</SubTitle>
+          <Title>
+            홍차와 함께하는 개발 <FontAwesomeIcon icon={faMugHot} />
+          </Title>
         </div>
       </Wrapper>
     </Background>
