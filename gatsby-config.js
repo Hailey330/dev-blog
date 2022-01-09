@@ -3,7 +3,7 @@ module.exports = {
     title: `홍차와 함께하는 개발`,
     description: `개발에 대한 모든 기록입니다.`,
     author: `HaileyChoi`,
-    siteUrl: `https://hongcha-log.com/`,
+    siteUrl: `https://hongcha-log.netlify.app/`,
   },
   plugins: [
     `gatsby-plugin-emotion`,
@@ -83,7 +83,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-canonical-urls',
       options: {
-        siteUrl: 'https://hongcha-log.com/',
+        siteUrl: 'https://hongcha-log.netlify.app/',
         stripQueryString: true,
       },
     },
