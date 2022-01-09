@@ -57,12 +57,9 @@ const Introduction: FunctionComponent<IntroductionProps> = ({
     <Background>
       <Wrapper>
         <ProfileImage profileImage={profileImage} />
-
         <div>
           <SubTitle>Hailey Da!ly</SubTitle>
-          <Title>
-            홍차와 함께하는 개발 <FontAwesomeIcon icon={faMugHot} />
-          </Title>
+          <Title>{`< Devlog /> `}</Title>
         </div>
       </Wrapper>
     </Background>
