@@ -6,6 +6,9 @@ module.exports = {
     siteUrl: `https://hongcha-log.com/`,
   },
   plugins: [
+    `gatsby-plugin-emotion`,
+    `gatsby-plugin-react-helmet`,
+    'gatsby-plugin-sitemap',
     {
       resolve: `gatsby-plugin-typescript`,
       options: {
@@ -13,8 +16,6 @@ module.exports = {
         allExtensions: true,
       },
     },
-    `gatsby-plugin-emotion`,
-    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
