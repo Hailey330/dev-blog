@@ -2,8 +2,6 @@ import React, { FunctionComponent } from 'react'
 import styled from '@emotion/styled'
 import { IGatsbyImageData } from 'gatsby-plugin-image'
 import ProfileImage from './ProfileImage'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMugHot } from '@fortawesome/free-solid-svg-icons'
 
 type IntroductionProps = {
   profileImage: IGatsbyImageData

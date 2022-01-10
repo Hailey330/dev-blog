@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `홍차와 함께하는 개발`,
-    description: `개발에 대한 모든 기록입니다.`,
+    title: `<Devlog/>`,
+    description: `개발에 대한 모든 로그`,
     author: `HaileyChoi`,
     siteUrl: `https://hongcha-log.netlify.app/`,
   },
