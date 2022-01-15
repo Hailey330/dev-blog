@@ -57,6 +57,11 @@ const Template: FunctionComponent<TemplateProps> = ({
           name="naver-site-verification"
           content="b75fcbaf5bbd4bd1f0c1b7d1d49bea26a828e123"
         />
+        <meta name="NaverBot" content="All" />
+        <meta name="NaverBot" content="index,follow" />
+        <meta name="Yeti" content="All" />
+        <meta name="Yeti" content="index,follow" />
+        <link rel="shortcut icon" href="favicon.ico" />
 
         <html lang="ko" />
       </Helmet>
