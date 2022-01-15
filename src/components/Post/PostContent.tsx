@@ -68,7 +68,7 @@ const MarkdownRenderer = styled.div`
   ol,
   ul {
     margin-left: 20px;
-    padding: 30px 0;
+    padding: 10px 0;
   }
 
   /* Adjust Horizontal Rule Style */
@@ -94,9 +94,12 @@ const MarkdownRenderer = styled.div`
 
   /* Adjust Code Style */
   pre[class*='language-'] {
-    margin: 30px 0;
-    padding: 15px;
+    tab-size: 2;
+    padding: 15px 12px;
+
+    font-family: 'Fira Code', monospace;
     font-size: 15px;
+    border-radius: 8px;
 
     ::-webkit-scrollbar-thumb {
       background: rgba(255, 255, 255, 0.5);
@@ -104,13 +107,10 @@ const MarkdownRenderer = styled.div`
     }
   }
 
-  code[class*='language-'],
-  pre[class*='language-'] {
-    tab-size: 2;
-    font-size: 14px;
-    padding: 2px 6px;
-    color: #ffffff;
-    font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+  code[class*='language-'] {
+    font-family: 'Fira Code', monospace;
+    font-size: 13px;
+    padding: 4px 6px;
   }
 
   /* Markdown Responsive Design */

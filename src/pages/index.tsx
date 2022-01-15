@@ -103,9 +103,7 @@ export const getPostList = graphql`
         siteUrl
       }
     }
-    allMarkdownRemark(
-      sort: { order: DESC, fields: [frontmatter___title, frontmatter___date] }
-    ) {
+    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
       edges {
         node {
           id
