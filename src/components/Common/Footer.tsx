@@ -20,7 +20,7 @@ const Footer: FunctionComponent = () => {
     <FooterWrapper>
       Thank You for Visiting My Blog, Have a Good Day 😊
       <br />
-      ©2021 Developer Hailey, Powered By Gatsby.
+      ©2021 Developer minkyung choi, Powered By Gatsby.
     </FooterWrapper>
   )
 }
